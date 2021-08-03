@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <div>
+                <div class="header">
+                    <img src="images/Logo (SVG).png" alt="FundMe logo" class="logo">
+                    <p  class="can">Create a new account</p>
+                </div>
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="FundMe" />
+    
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="yourname@FundMe" autocomplete="email"/>
+    
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="*****" autocomplete="new-password"/>
+                    <p>By signing up, you confirm that you've read and accepted our <a href="#" class="link">User Terms</a> and <a href="#" class="link">Privacy Policy</a>.</p>
+                    <button class="btn-sign btn">Sign Up</button>
+                    <p class="wrap"><span>or</span></p>
+                    <div class="signUp-btns">
+                        <button type="submit" class="google-btn google-btn-signup">
+                            <img src="images/google-icon 1.svg" alt="Google icon" class="gicon">
+                            <p>Continue with Google</p> 
+                        </button>
+                        <button type="submit" class="google-btn google-btn-signup">
+                            <img src="images/Rectangle 17.svg" alt="Facebook icon" class="gicon">
+                            <p class="con">Continue with Facebook</p>
+                        </button>
+                    </div>
+                    <p class="toggler">Existing user?<a class="toggle-link" id="signIn">Sign In</a></p>
+                </form>
+               
+            </div>
+            
+        </div>
+        <div class="form-container sign-in-container" >
+            <div>
+                <div class="header">
+                    <img src="images/Logo (SVG).png" alt="FundMe logo" class="logo">
+                    <p>Log into your account</p>
+                </div>
+                
+                <form action="#">  
+                    <label for="email">Email</label>  
+                    <input type="email" autocomplete="email" placeholder="yourname@fundme"/>
+                    
+                    <label for="Password" >Password</label>
+                    <input type="password" placeholder="*****" autocomplete="current-password"/>
+                    <div class="middle-section">
+                        <input type="checkbox" class="check" >
+                        <label for="">Remember Me</label>   
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                       
+                    <button class="btn-sign btn">Log In</button>
+                    <p class="wrap"><span>or</span></p>
+                    <div class="sign-in-btns">
+                        <button type="submit" class="google-btn">
+                            <img src="images/google-icon 1.svg" alt="Google icon" class="gicon">
+                            <p>Continue with Google</p>
+                        </button>
+                        
+                        <button type="submit" class="google-btn">
+                            <img src="images/Rectangle 17.svg" alt="Google icon" class="gicon">
+                            <p>Continue with Facebook</p>
+                        </button>
+                    </div>
+                    <p class="toggler">New User?<a class="toggle-link" id="signUp">Sign up</a></p>
+                </form>
+            </div>
+            
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <img src="images/logowhitex.png" alt="" class="logo">
+                    <p>Already have a FundMe account?</p>
+                    <button class="sign-Up btn" id="sign-In">Log In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <img src="images/logowhitex.png" alt="fundMe logo" class="logo">
+                    <p>Find the right fund for you anytime, anywhere.</p>
+                    <button class="sign-Up btn" id="sign-Up">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.js"></script> 
+    <script src="main.js"></script>
+</body>
+</html>
